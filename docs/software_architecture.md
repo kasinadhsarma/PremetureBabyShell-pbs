@@ -1,24 +1,30 @@
 # PBS Software Architecture Design
 
 ## 1. System Overview
-The PBS software architecture implements a distributed edge-cloud hybrid system for premature baby monitoring and care. The system utilizes edge computing for real-time processing and cloud integration for data analytics and storage.
+The PBS software architecture implements a distributed edge-cloud hybrid system for premature baby monitoring and care, leveraging Model Context Protocol (MCP) for enhanced AI model interaction. The system utilizes edge computing for real-time processing and cloud integration for data analytics and storage, with MCP providing standardized context for all AI operations.
 
 ## 2. Core Components
 
 ### 2.1 Frontend Layer
 - **Web Application**
   - React.js + Next.js based interface
-  - Real-time monitoring dashboard
-  - Alert management system
-  - Patient data visualization
+  - Real-time monitoring dashboard with MCP-aware data visualization
+  - Alert management system with contextual information
+  - Patient data visualization with rich context
   
 - **Mobile Application**
   - React Native implementation
-  - Push notification support
-  - Offline-first capability
-  - Emergency alerts system
+  - MCP-enabled push notifications
+  - Context-aware offline-first capability
+  - Emergency alerts system with detailed situational context
 
 ### 2.2 Backend Layer
+- **MCP Core Services**
+  - Context Management Service
+  - Model Registry Service
+  - Context Translation Service
+  - Model Deployment Service
+
 - **Microservices**
   - Patient monitoring service
   - Alert management service
@@ -38,10 +44,21 @@ The PBS software architecture implements a distributed edge-cloud hybrid system 
     - Maintenance scheduling
 
 ### 2.3 AI/ML Layer
+- **MCP Integration**
+  - Context Providers
+    - Sensor Data Contextualizer
+    - Environmental Context Service
+    - Patient History Context Service
+    - Medical Knowledge Base Integration
+  - Model Context Handlers
+    - Real-time Context Processing
+    - Historical Context Analysis
+    - Prediction Context Management
+
 - **Real-time Processing**
-  - PyTorch/TensorFlow/JAX implementation
-  - Vital signs monitoring
-  - Anomaly detection
+  - MCP-enabled PyTorch/TensorFlow/JAX implementation
+  - Context-aware vital signs monitoring
+  - Contextual anomaly detection
   - Predictive analytics (sepsis prediction)
   - Fluid composition analysis
   - Fluid level prediction
@@ -54,6 +71,11 @@ The PBS software architecture implements a distributed edge-cloud hybrid system 
   - Chemical composition verification
 
 ### 2.4 Data Pipeline
+- **MCP Data Processing**
+  - Context-aware stream processing
+  - Contextual data enrichment
+  - MCP message validation and transformation
+  
 - **Real-time Data Processing**
   - Apache Kafka for stream processing
   - Snowflake for data warehousing
@@ -82,14 +104,15 @@ The PBS software architecture implements a distributed edge-cloud hybrid system 
 - Secure API endpoints
 
 ## 4. DevOps Infrastructure
-- Docker containerization
-- Kubernetes orchestration
+- Docker containerization with MCP-aware service discovery
+- Kubernetes orchestration with context-based scaling
 - Terraform for infrastructure as code
-- CI/CD pipelines
-- Monitoring and logging
+- CI/CD pipelines with MCP validation
+- Context-aware monitoring and logging
 
 ## 5. Integration Points
-- HL7/FHIR for EMR integration
+- MCP-based service communication
+- HL7/FHIR for EMR integration with context mapping
 - MQTT for device communication
 - REST APIs for external services
 - WebSocket for real-time updates
@@ -107,3 +130,28 @@ The PBS software architecture implements a distributed edge-cloud hybrid system 
 - Emergency drainage procedures
 - System integrity checks
 - Contamination prevention measures
+
+## 7. MCP Implementation Details
+- **Context Definition**
+  - Sensor data context schemas
+  - Environmental context models
+  - Medical context frameworks
+  - Alert context templates
+
+- **Model Integration**
+  - Context providers and consumers
+  - Model wrapper definitions
+  - Context validation rules
+  - Transformation pipelines
+
+- **Communication Patterns**
+  - Synchronous context exchange
+  - Asynchronous context updates
+  - Context broadcast channels
+  - Emergency context propagation
+
+- **Data Storage**
+  - Context-aware data partitioning
+  - Historical context preservation
+  - Context versioning
+  - Audit trail with context
