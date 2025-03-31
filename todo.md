@@ -1,4 +1,5 @@
 Based on the key planning points for the Premature Baby Shell (PBS), here's a prioritized todo list:
+
 1. Core Technology and AI Implementation
      [ ]  Select and set up open-source AI technologies (PyTorch, TensorFlow, JAX).
      [ ]  Develop algorithms for real-time monitoring and anomaly detection.
@@ -38,6 +39,11 @@ Based on the key planning points for the Premature Baby Shell (PBS), here's a pr
      [ ]  Enable EMR integration.
      [ ]  Implement data logging and analytics.
      [ ]  Include optional battery backup.
+     [ ]  Implement amniotic fluid-like environment monitoring
+     [ ]  Add real-time fluid composition analysis
+     [ ]  Develop automated fluid replenishment system
+     [ ]  Implement pH and osmolality monitoring
+     [ ]  Add fluid level prediction and optimization
 6. Deployment Strategy
      [ ]  Phase 1: Prototype development and testing in simulated environments.
      [ ]  Phase 2: Pilot program in Neonatal Intensive Care Units (NICUs).
