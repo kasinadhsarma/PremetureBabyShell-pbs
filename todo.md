@@ -4,7 +4,8 @@ Based on the key planning points for the Premature Baby Shell (PBS), here's a pr
      [ ]  Develop algorithms for real-time monitoring and anomaly detection.
      [ ]  Develop machine learning models for predictive analytics (e.g., sepsis prediction).
      [ ]  Design and develop user interfaces for caregivers (React, Next.js).
-2. Hardware and System Architecture[ ]  Design the backend architecture.
+2. Hardware and System Architecture
+     [ ]  Design the backend architecture.
      [ ]  Design the frontend architecture.
      [ ]  Integrate Raspberry Pi for sensor data acquisition and processing.
      [ ]  Incorporate Google Coral Edge TPU for local AI processing.
